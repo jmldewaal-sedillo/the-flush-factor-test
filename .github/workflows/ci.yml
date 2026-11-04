@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # Vangnet: geen privégegevens (huisadres) online (Apps/CLAUDE.md sectie 11, punt 6). De lijst komt uit het
       # geheim PRIVATE_BLOCKLIST en wordt nooit getoond. Ontbreekt het geheim in een van onze eigen repo's, dan
@@ -80,7 +80,7 @@ jobs:
       group: volledig-${{ github.ref }}
       cancel-in-progress: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-node@v4
         with:
@@ -124,7 +124,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-node@v4
         with:
