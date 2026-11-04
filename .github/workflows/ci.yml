@@ -63,7 +63,7 @@ jobs:
         run: npm run test:rook
 
       - name: Upload rapport bij een fout
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: failure()
         with:
           name: rooktest
@@ -97,7 +97,7 @@ jobs:
         run: npm test
 
       - name: Upload screenshots en rapport
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: always()
         with:
           name: testresultaat
@@ -146,7 +146,7 @@ jobs:
       - name: Inpakken
         run: tar --dereference --hard-dereference --directory _site -cf "$RUNNER_TEMP/artifact.tar" .
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: github-pages
           path: ${{ runner.temp }}/artifact.tar
