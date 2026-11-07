@@ -63,7 +63,7 @@ de standaardbranch van de test-repo wordt een lege branch `standaard` met alleen
 testversie. De workflow publiceert alleen vanaf `main` en de Pages-omgeving laat `main` toe (gecontroleerd op
 2026-11-07). Updates en meldingen horen alleen in de hoofdrepo `the-flush-factor`.
 
-Eén keer uitvoeren (Jenn; Claude Code mag de repo-instellingen niet zelf wijzigen):
+Uitgevoerd op 2026-11-07 voor alle drie de test-repo's. Bij een nieuwe test-repo (Claude Code mag de repo-instellingen niet zelf wijzigen):
 
 ```bash
 cd /home/maggiesedd/Documents/Projecten/Apps
